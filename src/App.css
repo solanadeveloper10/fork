@@ -1,0 +1,196 @@
+.color-bg {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ffffff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+.header {
+  width: 100vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+
+  padding: 2rem 5rem 0;
+
+  gap: 3rem;
+
+  transition: all 300ms ease-out;
+
+  z-index: 10;
+
+  @media (max-width: 700px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+
+    padding: 1rem 5rem 0;
+  }
+}
+
+.social-link {
+  transition: all 200ms ease-out;
+  color: #000000;
+
+  @media (max-width: 600px) {
+    flex: 1 1 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.contract-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  font-size: 2rem;
+
+  margin-bottom: 10vh;
+
+  transition: all 300ms ease-out;
+
+  max-width: 95vw;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 7vh;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    gap: 10px;
+  }
+}
+
+.contract-wrapper p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.copy-btn {
+  cursor: pointer;
+
+  padding: 10px;
+
+  font-size: 1.25rem;
+
+  border: none;
+  outline: none;
+
+  background-color: #000000;
+  color: white;
+
+  /* font-family: 'Departure Mono', sans-serif; */
+
+  border-radius: 10%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 75vh;
+  height: 75vh;
+
+  @media (max-width: 1024px) {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  animation: rotate 8s linear infinite;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+#screenVideo {
+  position: absolute;
+  top: 18vh;
+  left: 23vh;
+
+  width: 30vh;
+  height: auto;
+
+  z-index: 1;
+
+  @media (max-width: 1024px) {
+    top: 18vw;
+    left: 23vw;
+
+    width: 30vw;
+  }
+}
+
+.copied-text {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+
+  width: calc(100% + 2rem);
+  height: calc(100% + 2rem);
+
+  background-color: #00000093;
+
+  color: white;
+
+  font-size: 2.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
