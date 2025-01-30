@@ -7,7 +7,7 @@ function App() {
     <div className='color-bg' />
     <div className='wrapper'>
       <header className='header'>
-        <a href="https://x.com/DeepCommunizm" target='_blank' className='social-link'>
+        {/* <a href="https://x.com/DeepCommunizm" target='_blank' className='social-link'>
           X
         </a>
         <a href="https://t.me/DeepCommunizm" target='_blank' className='social-link'>
@@ -20,6 +20,21 @@ function App() {
           Dexscreener
         </a>
         <a href="https://raydium.io/swap/?inputMint=sol&outputMint=FgkbcKNeSJtQGZ4WEweRWh8kSveoJvszdbX9CKMdeep" target='_blank' className='social-link'>
+          Raydium
+        </a> */}
+        <a href="#" target='_blank' className='social-link'>
+          X
+        </a>
+        <a href="#" target='_blank' className='social-link'>
+          Telegram
+        </a>
+        <a href="#" target='_blank' className='social-link'>
+          Dextools
+        </a>
+        <a href="#" target='_blank' className='social-link'>
+          Dexscreener
+        </a>
+        <a href="#" target='_blank' className='social-link'>
           Raydium
         </a>
       </header>
