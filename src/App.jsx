@@ -18,11 +18,11 @@ function App() {
   function getImageSrc() {
     const width = window.innerWidth;
     if (width <= 768) {
-      return '/fork_it_mobile.png';  // Mobile image
+      return '/fork_it_mobile.webp';  // Mobile image
     } else if (width <= 1024) {
-      return '/fork_it_tablet.png';  // Tablet image
+      return '/fork_it_tablet.webp';  // Tablet image
     } else {
-      return '/fork_it_desktop.png'; // Desktop image
+      return '/fork_it_desktop.webp'; // Desktop image
     }
   }
 
