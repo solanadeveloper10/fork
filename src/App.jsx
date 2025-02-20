@@ -42,11 +42,11 @@ function App() {
       <div className="color-bg" />
       <div className="wrapper">
         <header className="header">
-          <a href="#" target="_blank" className="social-link">X</a>
-          <a href="#" target="_blank" className="social-link">Telegram</a>
-          <a href="#" target="_blank" className="social-link">Dextools</a>
-          <a href="#" target="_blank" className="social-link">Dexscreener</a>
-          <a href="#" target="_blank" className="social-link">Raydium</a>
+          <a href="https://x.com/ForkChangedLife" target="_blank" className="social-link">X</a>
+          <a href="https://t.me/ForkChangedLife" target="_blank" className="social-link">Telegram</a>
+          <a href="https://www.dextools.io/app/en/solana/pair-explorer/JALKNoYDJbtwJAXvFR8hEzUYup5buHEQQW7PBFQyHVXb?t=1740052380797" target="_blank" className="social-link">Dextools</a>
+          <a href="https://dexscreener.com/solana/jalknoydjbtwjaxvfr8hezuyup5buheqqw7pbfqyhvxb" target="_blank" className="social-link">Dexscreener</a>
+          <a href="https://raydium.io/swap/?inputMint=sol&outputMint=FoRKH4cMtwXt5BvRBYZNEJfcdE72xbfmotRm44YkKU7D" target="_blank" className="social-link">Raydium</a>
         </header>
 
         <div

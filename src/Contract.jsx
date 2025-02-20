@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const CONTRACT = "soonsoonsoonsoonsoonsoonsoonsoonsoonsoon"
+const CONTRACT = "FoRKH4cMtwXt5BvRBYZNEJfcdE72xbfmotRm44YkKU7D"
 
 const Contract = () => {
   const [isCopied, setIsCopied] = useState(false);
@@ -23,8 +23,7 @@ const Contract = () => {
         {CONTRACT}
       </p>
       <button onClick={handleCopy} className='copy-btn'>Copy</button>
-      {/* {isCopied ? <div className='copied-text'>Copied!</div> : null} */}
-      {<div className='copied-text'>SOON!</div>}
+      {isCopied ? <div className='copied-text'>Copied!</div> : null}
     </div>
   )
 }
