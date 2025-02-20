@@ -155,7 +155,27 @@
     height: 75vw;
   }
 
-  animation: rotate 8s linear infinite;
+  cursor: pointer;
+
+  animation: rotate 8000ms linear infinite;
+}
+
+.fork-it-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+  width: 15vw;
+
+  @media (max-width: 1023.98px) {
+    top: 20%;
+  }
+
+  @media (max-width: 767.98px) {
+    top: 25%;
+
+    width: 25vw;
+  }
 }
 
 .image {

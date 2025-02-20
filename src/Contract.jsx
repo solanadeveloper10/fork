@@ -1,11 +1,12 @@
 import { useState } from 'react'
 
+const CONTRACT = "loremIPsumHuipsumTotewmLotemNiggaBoyzzz"
+
 const Contract = () => {
   const [isCopied, setIsCopied] = useState(false);
-  const textToCopy = "Soon";
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(textToCopy)
+    navigator.clipboard.writeText(CONTRACT)
       .then(() => {
         setIsCopied(true);
         // Optionally, reset the copied status after a short delay
@@ -19,7 +20,7 @@ const Contract = () => {
   return (
     <div className={'contract-wrapper'}>
       <p>
-        Soon
+        {CONTRACT}
       </p>
       <button onClick={handleCopy} className='copy-btn'>Copy</button>
       {isCopied ? <div className='copied-text'>Copied!</div> : null}
