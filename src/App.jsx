@@ -15,16 +15,7 @@ function App() {
 
   const [imageSrc, setImageSrc] = useState(getImageSrc());
 
-  function getImageSrc() {
-    const width = window.innerWidth;
-    if (width <= 768) {
-      return '/fork_it_mobile.webp';  // Mobile image
-    } else if (width <= 1024) {
-      return '/fork_it_tablet.webp';  // Tablet image
-    } else {
-      return '/fork_it_desktop.webp'; // Desktop image
-    }
-  }
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,22 +30,14 @@ function App() {
 
   return (
     <>
-      <div className="color-bg" />
-      <div className="wrapper">
-        <header className="header">
-          <a href="https://x.com/ForkChangedLife" target="_blank" className="social-link">X</a>
-          <a href="https://t.me/ForkChangedLife" target="_blank" className="social-link">Telegram</a>
-          <a href="https://www.dextools.io/app/en/solana/pair-explorer/JALKNoYDJbtwJAXvFR8hEzUYup5buHEQQW7PBFQyHVXb?t=1740052380797" target="_blank" className="social-link">Dextools</a>
-          <a href="https://dexscreener.com/solana/jalknoydjbtwjaxvfr8hezuyup5buheqqw7pbfqyhvxb" target="_blank" className="social-link">Dexscreener</a>
-          <a href="https://raydium.io/swap/?inputMint=sol&outputMint=FoRKH4cMtwXt5BvRBYZNEJfcdE72xbfmotRm44YkKU7D" target="_blank" className="social-link">Raydium</a>
-        </header>
+      
 
         <div
           className="image-wrapper"
           onClick={handleImageClick}
           style={{ animationDuration: `${animationTime}ms` }}
         >
-          <img src="/fork.webp" alt="Fork" className="image" />
+          <img src="/fork.png" alt="Fork" className="image" />
         </div>
 
         <div className='fork-it-wrapper'>
